@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    
+  </head>  
+  <body>
+    
+    <!--...<main>
+   
+      <img src="/assets/Don_Flip_Packed0_Normal.png"/>
+      </main>-->
+    <a-scene>
+      
+        
+        <a-assets>
+   
+        <a-asset-item id="mtl" src="https://cdn.glitch.com/67e3c015-ea03-4d9e-85c8-86c9cab54942%2FipadAndStand.mtl?1547928143349"></a-asset-item>
+          <a-assets>
+          <a-asset-item id="obj" src="https://cdn.glitch.com/f65fd2f3-3164-4816-91e4-59cf7e9ef383%2Fmodel.obj?1536865839365"></a-asset-item>
+            <a-asset-item id="mtl" src="https://cdn.glitch.com/f65fd2f3-3164-4816-91e4-59cf7e9ef383%2Fmaterials.mtl?1536865839254"></a-asset-item>
+        </a-assets>
+  </a-assets>
+        
+      
+
+  <a-entity gltf-model="#brainstem" position="10 -1 5" scale="3 3 3"></a-entity>
+        
+        
+        <a-asset-item id="obj" src="https://cdn.glitch.com/67e3c015-ea03-4d9e-85c8-86c9cab54942%2Fdon-flip.glb?1547942210875"></a-asset-item>
+ 
+            <a-asset-item id="mtl" src="https://cdn.glitch.com/67e3c015-ea03-4d9e-85c8-86c9cab54942%2FipadAndStand.mtl?1547928143349"></a-asset-item>-->
+        
+      
+    <!--...<video id="video-src" autoplay loop="true" src="https://cdn.glitch.com/67e3c015-ea03-4d9e-85c8-86c9cab54942%2ForiginClip02.mp4?1547930572462"></video>-->
+    
+      </a-assets>
+      
+      
+    <!--...<a-video id="video-screen" src="#video-src"  position="-130.5 29.665 -154.3" 
+    width="9" height="16">
+    </a-video>-->
+        <!--...<a-box scale="0.5">
+        
+          <a-animation attribute="rotation" to= "0 360 0" direction="normal" dur="5000" easing= "linear" repeat="indefinite"> </a-animation>
+           </a-box>-->
+    
+       <a-entity obj-model="obj: #obj; mtl:#mtl" position="-1.676 -8.562 -5.305" scale="2 2 2" rotation="0 90 0" shadow="cast:true"> </a-entity>
+     
+          <!--...<a-animation> attribut="position" to ="0 1 -10" direction="alternate" dur="2000" repeat="indefinite"
+           </a-animation> 
+        
+        
+         </a-box>
+    
+      
+     <!--... <a-light type="ambient" intensity="0.7" color="#ffffff"></a-light>
+      <a-light type="ambient" intensity="0.7" color="#ffffff"></a-light>
+      <a-light intensity="1" color="#00ffff" position="-5.72 6.65 0.80" animation__color="property:color; dir:alternate; dur:2000; easing:easeInOutSine; loop:true; to:#ff0000" alongpath="path:10,10,-10 -20,10,-10 10,0,-10; closed:true; dur:12000"></a-light>
+      <a-light intensity="1" color="#ff0000" position="8.60 6.65 0.80" animation__color="property:color; dir:alternate; dur:2000; easing:easeInOutSine; loop:true; to:#0000ff" alongpath="path:-2,-2,5 2,-1,5 0,-1,5; closed:true; dur:3000;"></a-light>-->
+      
+      <a-sky src="https://cdn.glitch.com/67e3c015-ea03-4d9e-85c8-86c9cab54942%2F8KRender_02_04.jpg?1547928063467" > </a-sky>
+       <!--... <a-box color="red" scale="1 1 1" position="5 0 0"
+		      event-set__enter="_event: mouseenter; color: green"
+		      event-set__leave="_event: mouseleave; color: red">
+      </a-box>
+      
+      <a-box color="red" scale="1 1 1" position="5 0 0"
+		      event-set__enter="_event: mouseenter; color: green"
+		      event-set__leave="_event: mouseleave; color: red">
+      </a-box>
+      
+      <a-box color="red" scale="1 1 1" position="5 0 0"
+		      event-set__enter="_event: mouseenter; scale: 1; color: green"
+		      event-set__leave="_event: mouseleave; scale: 4; color "#EF2D5E">
+      </a-box>
+        
+        
+      <a-box rotation = "0 45 45" position = "0 0 -5" scale = "2 2 2" color = "#ffffff" src = "https://i.imgur.com/mYmmbrp.jpg"> 
+      <a-animation attribute="position" to="0 1.0 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+      </a-box> 
+      
+      <a-box rotation = "0 45 45" position = "5 1 -10" scale = "2 2 2" color = "#fffff" src = "https://cdn.glitch.com/45949efb-3de9-47db-8e77-c8c741c09d93%2Fmars.jpg?1538605035670"> 
+          <a-animation attribute="position" to="5 1.0 -20" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+      </a-box> -->
+      
+      <a-sphere position="5 1.25 -25" radius="1.25" color="#EF2D5E" shadow>
+         <a-animation attribute="position" to="0 1.0 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+      </a-sphere>
+        
+      <a-camera>
+          <!--...<a-cursor color="white">
+            
+          </a-cursor> -->
+      </a-camera>
+      
+    </a-scene>
+  </body>
+</html>
+
